@@ -21,19 +21,14 @@ class ProcedureServiceRequest(Document):
 		for item in template.customer_reminder_item:
 			trigger_time = item.trigger_time
 			
-			reminder_date = add_to_date(due_date, seconds = trigger_time)
+			reminder_date = add_to_date(due_date, seconds = -trigger_time)
 
 			# Create the Customer Reminder Schedule
 			customer_reminder_schedule = frappe.get_doc({
 				"doctype": "Customer Reminder Schedule",
-				"service_type" : self.service_type,
-				#"service_request": self.name,
+				"service_request": self.name,
 				"reminder_date": reminder_date
 			})
-
-			customer_reminder_schedule.insert(ignore_permissions=True,ignore_mandatory=True)
-
-			customer_reminder_schedule.service_request = self.name
 
 			customer_reminder_schedule.insert(ignore_permissions=True,ignore_mandatory=True)
 

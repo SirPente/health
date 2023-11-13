@@ -10,7 +10,7 @@ class CustomerReminder(Document):
 
 	
 
-	def before_insert(self):
+	def before_save(self):
 		
 		if self.message_template:
 			# Fetch the selected SMS template content
