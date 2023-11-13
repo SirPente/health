@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-13 16:43:49.500234",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reminder_type",
+  "reminder_trigger",
+  "trigger_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "reminder_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Reminder Type",
+   "options": "Zalo\nCall",
+   "reqd": 1
+  },
+  {
+   "default": "Before Due Date",
+   "fieldname": "reminder_trigger",
+   "fieldtype": "Select",
+   "label": "Reminder Trigger",
+   "options": "Before Due Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trigger_time",
+   "fieldtype": "Duration",
+   "hide_seconds": 1,
+   "label": "Trigger Time",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-13 17:12:25.735763",
+ "modified_by": "Administrator",
+ "module": "Veterinary CRM",
+ "name": "Customer Reminder Schedule Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

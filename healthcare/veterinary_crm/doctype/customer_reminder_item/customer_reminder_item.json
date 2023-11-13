@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-13 17:45:33.682604",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_reminder_schedule",
+  "patient"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_reminder_schedule",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Reminder Schedule",
+   "options": "Customer Reminder Schedule",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-13 17:53:30.092779",
+ "modified_by": "Administrator",
+ "module": "Veterinary CRM",
+ "name": "Customer Reminder Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

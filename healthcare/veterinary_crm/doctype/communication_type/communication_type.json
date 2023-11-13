@@ -1,36 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-11-13 14:51:48.032291",
+ "creation": "2023-11-13 17:42:51.755179",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_7b3s",
-  "amended_from"
+  "name1"
  ],
  "fields": [
   {
-   "fieldname": "section_break_7b3s",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Procedure Service Request",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Name",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2023-11-13 14:52:08.194599",
+ "modified": "2023-11-13 17:43:23.156624",
  "modified_by": "Administrator",
- "module": "Healthcare",
- "name": "Procedure Service Request",
+ "module": "Veterinary CRM",
+ "name": "Communication Type",
  "owner": "Administrator",
  "permissions": [
   {
